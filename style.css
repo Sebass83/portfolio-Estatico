@@ -1,0 +1,226 @@
+:root{
+    --dark-blue: #1A7F88;
+    --mid-blue: #02A0B3;
+    --light-blue: #67C8CB;
+    --white: #FFFFFF;
+    --black: #000000;
+    --red: #FC6B62;
+    --light-green: #6fcf97;
+    --mid-green: #87B313;
+    --mid-orange:#EFA31A;
+    --light-orange: #FACC7B;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header{
+    background-color: var(--dark-blue);
+    text-align: center;
+    min-width: 375px;
+
+}
+.img-responsive-header{
+    margin: 30px 0 0 0 ;
+    width: 350px;
+}
+
+.fondo{
+    display: flex;
+    margin-top: 1rem;
+    position: relative;
+    color: white;
+    font-weight: 700;
+    border-radius: 10px;
+    height: inherit;
+    width: fit-content;
+    padding: 10px;
+    background-color: var(--light-blue);
+    }
+
+#informacion_general{
+    padding: 2rem;
+    width: 100vw;
+}
+#saludo{
+    width: 80vw;
+    font-size: 40px;
+}
+#descripcion{ 
+    width: 80vw;
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+
+.fondo::before{
+    content: " ";
+    display: block;
+    background-color: var(--light-orange);
+    height: 40px;
+    width: 100%;
+    position: absolute;
+    z-index: -2;
+    border-radius: 10px;
+    top: -10px;
+    left: -10px;
+}
+.sas_img{  
+margin: auto;
+width: 200px;
+height: 200px;
+border-radius: 10000px;
+position: relative;
+}
+.sas_img::after{
+    content: "";
+    display: block;
+    position: absolute;
+    background-color: var(--light-orange);
+    height: 200px;
+    width: 200px;
+    border-radius: 10000px;
+    top: -20px;
+    left: -20px;
+    z-index: -2;
+}
+.sas_img::before{
+    content: "";
+    display: block;
+    position: absolute;
+    background-color: var(--light-blue);
+    height: 200px;
+    width: 200px;
+    border-radius: 10000px;
+    top: 20px;
+    left: 20px;
+    z-index: -1;
+}
+.card-columns {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: repeat(auto-fit,  100%);
+
+  }
+
+footer {
+display: grid;
+background-color: var(--dark-blue);
+padding: 5px;
+align-items: center;
+justify-content: center;
+margin-top: 100px;
+}
+.pestania-azul{
+    width: fit-content;
+    height: 0px;
+    padding-right: 10px;
+    border-left: 30px solid transparent;
+    border-bottom: 30px solid var(--light-blue);
+    align-content: center;
+    color: white;
+    cursor: pointer
+}
+
+.bg-orange{
+    border-bottom: 30px solid var(--light-orange);
+}
+.bg-green{
+    border-bottom: 30px solid var(--light-green);
+}
+.blue{
+background-color: var(--light-blue);
+}
+.orange{
+    background-color: var(--light-orange);
+}
+.green{
+    background-color: var(--light-green);
+}
+
+
+@media (min-width: 375px) { 
+    .navbar-nav{
+        justify-content: space-around;
+    }
+    
+    
+ }
+@media (min-width: 768px) { 
+    #informacion_general{
+        display: flex;
+        text-align:left;
+        width: 80vw;
+    }
+
+    #saludo{
+        padding-top: 4rem;
+        width: 30vw;
+        font-size: 40px;
+    }
+    #descripcion{ 
+        width: 30vw;
+        font-size: 18px;
+        margin-bottom: 120px;
+    }
+
+    .sas_img{  
+        margin:  auto;
+        width: 300px;
+        height: 300px;
+        border-radius: 10000px;
+        position: relative;
+        }
+        .sas_img::after{
+            content: "";
+            display: block;
+            position: absolute;
+            background-color: var(--light-orange);
+            height: 300px;
+            width: 300px;
+            border-radius: 10000px;
+            top: -20px;
+            left: -20px;
+            z-index: -2;
+        }
+        .sas_img::before{
+            content: "";
+            display: block;
+            position: absolute;
+            background-color: var(--light-blue);
+            height: 300px;
+            width: 300px;
+            border-radius: 10000px;
+            top: 20px;
+            left: 20px;
+            z-index: -1;
+        }
+
+    .card-columns {
+        display: grid;
+        justify-items: center;
+        align-items: center;
+        grid-template-columns: repeat(auto-fit, 48.3%);
+    
+      }
+ }
+@media (min-width: 992px) {  
+
+
+
+
+}
+@media (min-width: 1200px) { 
+
+ }
+@media (min-width: 1400px) {
+
+  }
+    
+
+
+
