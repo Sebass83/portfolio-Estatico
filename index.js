@@ -10,13 +10,18 @@ console.log(dText.innerText);
 let sas_img = document.getElementById('sas_img');
 console.log(sas_img.src);
 
+
 let email = document.getElementById('floatingInput');
 console.log(email);
+
 let comentario = document.getElementById('floatingTextarea2');
 console.log(comentario);
+
+let registrado = false
 function entrar() {
+  registrado = !registrado;
     //habilitar botones de edicion
-    console.log('entrar');
+    console.log(registrado);
 }
 
 let bet = `<section class="card-group">
